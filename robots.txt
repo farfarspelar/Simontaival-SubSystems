@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /posts/template.html
-Disallow: /posts/example-post.html
+Disallow: /Simontaival-SubSystems/posts/template.html
+Disallow: /Simontaival-SubSystems/posts/example-post.html
 
-# Before launch, add: Sitemap: [ADD DOMAIN]/sitemap.xml
+Sitemap: https://farfarspelar.github.io/Simontaival-SubSystems/sitemap.xml

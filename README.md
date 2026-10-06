@@ -32,7 +32,7 @@ Open HTML files in any text editor. Content is in `<main id="main">`; retain the
 - Products: edit the corresponding `#subcalc`, `#subglyph` or `#submakro` section in `software.html`, then update the overview on `index.html`.
 - New product: copy one product section, assign a unique ID and add an overview card on the homepage. Use confirmed features and an accurate status.
 - Consulting: edit `consulting.html`.
-- Experience: edit `about.html`. Approximate career durations are supplied as of October 2026; review them periodically.
+- Experience: edit `about.html`. The manufacturing background uses the stable start year of 1997.
 - Header/footer: shared markup is deliberately duplicated for a small static site. Update all seven HTML files when changing navigation or branding. Posts use `../` paths.
 
 ## Adding an article
@@ -40,8 +40,8 @@ Open HTML files in any text editor. Content is in `<main id="main">`; retain the
 1. Copy `posts/template.html` to a descriptive filename, such as `posts/operator-feedback.html`.
 2. Replace the title, description, OpenGraph title/description, visible heading, date and content. Use a `<time datetime="YYYY-MM-DD">` element for the date.
 3. Remove the draft wording and `<meta name="robots" content="noindex">` when publishing.
-4. Add a linked card to `blog.html` (and optionally a homepage preview). Planned cards currently have no links because articles do not yet exist.
-5. Add its public URL to `sitemap.xml` once a real domain is configured.
+4. Add a linked card to `blog.html` (and optionally a homepage preview). Upcoming-topic cards have no links because articles do not yet exist.
+5. Set its canonical and `og:url` metadata to the final article URL under `https://farfarspelar.github.io/Simontaival-SubSystems/`, and add that URL to `sitemap.xml`.
 
 Keep relative links such as `../css/style.css`, `../Images/Background.png` and `../blog.html` in posts. The sample and template are intentionally excluded from indexing.
 
@@ -51,10 +51,10 @@ Contact information is present in `index.html`, `software.html`, `consulting.htm
 
 - Email: `simontaivalsubsystems@gmail.com` (with a working `mailto:` link).
 - LinkedIn: `https://www.linkedin.com/in/kristian-simontaival-87595b408`
-- GitHub: `https://github.com/farfarspelar/FarfarSpelar`
-- `[ADD DOMAIN]` — replace with the public site URL.
+- GitHub: `https://github.com/farfarspelar/Simontaival-SubSystems`
+- Website: `https://farfarspelar.github.io/Simontaival-SubSystems/`
 
-Also replace `[ADD VERIFIED PUBLIC SUBGLYPH DESCRIPTION]` in `software.html`. No detailed description was available in the supplied project. Article placeholders belong to draft/sample pages, not finished articles. No software pricing or download links are assumed.
+SubGlyph uses the confirmed short description covering practical technical workflows, multilingual support and metric / imperial units. Article placeholders remain only in draft/sample pages, which are not indexed or linked from the public blog. No software pricing or download links are assumed.
 
 ## Images
 
@@ -75,9 +75,9 @@ Open `index.html` directly in a browser; all navigation and assets work without 
 
 No build command is required. `.nojekyll` requests plain static hosting. Relative asset and navigation paths support both repository and custom-domain Pages sites.
 
-Before public launch, replace the domain placeholder in `sitemap.xml` with the full public base URL (including a repository path if applicable), and add a real absolute Sitemap directive in `robots.txt`. The current sitemap is a clearly marked draft and should not be submitted to search engines. For dependable social sharing, replace each `og:image` value with the final absolute image URL and add an absolute `og:url` once the public URL is known. Runtime navigation and asset references remain relative.
+The public base URL is `https://farfarspelar.github.io/Simontaival-SubSystems/`. Canonical URLs, OpenGraph URLs, the sitemap and the robots.txt Sitemap directive use this address. OpenGraph images use the absolute `Images/Background.png` URL. Update these together if the domain changes. Runtime asset and navigation paths remain relative.
 
-Review contact information, the SubGlyph description and draft article status before launch. The site is deployable now, but these editorial and domain items remain unfinished by design.
+Review draft article metadata and content before publishing. Upcoming topics intentionally have no publication dates or article links.
 
 ## Validation status
 
@@ -85,6 +85,6 @@ All seven HTML files were checked for local link and fragment targets, exact-cas
 
 Live browser verification could not run in the restricted implementation environment: starting a local HTTP server and headless Chrome was blocked by socket permissions. Before launch, review all pages at 320, 375, 768, 1024 and 1440 pixels, check for horizontal scrolling, test Menu and Escape on mobile, tab through the links, and repeat with JavaScript disabled. Also check the browser console. These browser checks are pending, not reported as passed.
 
-## Repository upload
+## Repository
 
-The website is uploaded to `https://github.com/farfarspelar/FarfarSpelar`. This is also the owner's profile repository, so its existing root `README.md` is preserved. This website guide is stored there as `WEBSITE_README.md`; locally it remains `README.md`. Site files are in the repository root. Publishing `main` / root through Pages will normally use `https://farfarspelar.github.io/FarfarSpelar/`. The domain placeholders remain until the public deployment URL is confirmed.
+The complete website is stored in `https://github.com/farfarspelar/Simontaival-SubSystems` on `main`, with this guide as the root `README.md`. Publish `main` / root through GitHub Pages. The earlier `FarfarSpelar` profile repository is separate and is not modified by website updates.
