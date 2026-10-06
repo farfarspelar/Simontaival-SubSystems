@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace [ADD DOMAIN] with the full public site URL, including any GitHub Pages repository path. This draft must be updated before submission. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>[ADD DOMAIN]/index.html</loc></url>
+    <url><loc>[ADD DOMAIN]/software.html</loc></url>
+    <url><loc>[ADD DOMAIN]/consulting.html</loc></url>
+    <url><loc>[ADD DOMAIN]/about.html</loc></url>
+    <url><loc>[ADD DOMAIN]/blog.html</loc></url>
+</urlset>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /posts/template.html
+Disallow: /posts/example-post.html
+
+# Before launch, add: Sitemap: [ADD DOMAIN]/sitemap.xml
