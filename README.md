@@ -5,7 +5,7 @@ A static English-language website for industrial software and production enginee
 ## Files
 
 - `index.html` — homepage, concise overview and contact section.
-- `software.html` — SubCalc, SubGlyph and SubMakro.
+- `software.html` — SubCalc, SubEdit, SubManager, SubGlyph and SubMakro.
 - `consulting.html` — remote and on-site services.
 - `about.html` — founder background and `#experience` section.
 - `blog.html` — planned topics and future article links.
@@ -29,7 +29,7 @@ All four original candidates remain in `Images/`. The header displays Logo1's em
 Open HTML files in any text editor. Content is in `<main id="main">`; retain the heading hierarchy and descriptive links.
 
 - Homepage: edit `index.html`. Keep detailed service and career information on their dedicated pages.
-- Products: edit the corresponding `#subcalc`, `#subglyph` or `#submakro` section in `software.html`, then update the overview on `index.html`.
+- Products: edit the corresponding `#subcalc`, `#subedit`, `#submanager`, `#subglyph` or `#submakro` section in `software.html`, then update the overview on `index.html`.
 - New product: copy one product section, assign a unique ID and add an overview card on the homepage. Use confirmed features and an accurate status.
 - Consulting: edit `consulting.html`.
 - Experience: edit `about.html`. The manufacturing background uses the stable start year of 1997.
@@ -88,3 +88,7 @@ Live browser verification could not run in the restricted implementation environ
 ## Repository
 
 The complete website is stored in `https://github.com/farfarspelar/Simontaival-SubSystems` on `main`, with this guide as the root `README.md`. Publish `main` / root through GitHub Pages. The earlier `FarfarSpelar` profile repository is separate and is not modified by website updates.
+
+## Active project descriptions
+
+The homepage and software page describe SubCalc, SubEdit and SubManager from their local project READMEs. Feature lists reflect current development; older packaged releases may differ. SubCalc estimates are not full CNC simulations, SubEdit preview and NC generation have documented limits, and SubManager register exchange is file based and version dependent. Keep these distinctions when updating product content.

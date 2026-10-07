@@ -6,9 +6,9 @@
   <title>
    Industrial Software | Simontaival SubSystems
   </title>
-  <meta content="Explore SubCalc, SubGlyph and the upcoming SubMakro: a software family grounded in practical manufacturing experience." name="description"/>
+  <meta content="Explore SubCalc, SubEdit and SubManager: machining estimates, NC editing and production resource management, alongside SubGlyph and SubMakro." name="description"/>
   <meta content="Industrial Software | Simontaival SubSystems" property="og:title"/>
-  <meta content="Explore SubCalc, SubGlyph and the upcoming SubMakro: a software family grounded in practical manufacturing experience." property="og:description"/>
+  <meta content="Explore SubCalc, SubEdit and SubManager: machining estimates, NC editing and production resource management, alongside SubGlyph and SubMakro." property="og:description"/>
   <meta content="website" property="og:type"/>
   <meta content="Simontaival SubSystems" property="og:site_name"/>
   <meta content="https://farfarspelar.github.io/Simontaival-SubSystems/Images/Background.png" property="og:image"/>
@@ -77,38 +77,75 @@
      The Sub software family.
     </h1>
     <p class="lead">
-     Software built from manufacturing experience, with a practical production perspective.
+     Software built from manufacturing experience, with a practical production perspective. Active projects cover machining estimates, NC programming and production resource management.
     </p>
    </section>
    <section class="section surface" id="subcalc">
     <div class="container product">
      <div>
-      <p class="eyebrow">
-       01 / In development
-      </p>
-      <h2>
-       SubCalc
-      </h2>
-      <p class="lead">
-       Production calculation, manufacturing analysis and decision support.
-      </p>
+      <p class="eyebrow">01 / Active development</p>
+      <h2>SubCalc</h2>
+      <p class="lead">Machining estimates and production decision support.</p>
      </div>
      <div>
-      <p>
-       A drawing arrives, followed by immediate questions: how long will this take, can it be manufactured, and which machine should handle it?
-      </p>
-      <p>
-       SubCalc is being developed to make this analysis more structured and repeatable. It supports comparisons between machines and alternative manufacturing approaches.
-      </p>
-      <h3>
-       Your production environment
-      </h3>
-      <p>
-       Users build their own production environment inside the software. This may include their machine park, machine capabilities, tooling information and manufacturing conditions, so calculations and recommendations reflect actual production reality.
-      </p>
-      <p>
-       SubCalc is intended to support manufacturing decisions using structured information. Manufacturing knowledge remains essential.
-      </p>
+      <p>SubCalc helps turn a part and its machining operations into a structured estimate of machining time, cycle time, total order time, material use and tooling needs. Compare the same job across your own machines using their actual capabilities and surrounding process times.</p>
+      <h3>Features</h3>
+      <ul>
+       <li>Machining operations for turning, drilling, milling, threading, grooving, parting and engraving.</li>
+       <li>A configurable machine fleet with spindle limits, handling times and simultaneous main/subspindle machining where supported.</li>
+       <li>Material planning for bar stock and individual blanks, plus tool consumption and purchasing requirements.</li>
+       <li>Tool and material libraries, with cutting data and pricing information.</li>
+       <li>Complete, simplified and quick PDF reports, plus CSV and text export.</li>
+       <li>Current source workflow: 2D part profiles, operation selection, SubEdit project exchange (.se), SubGlyph engraving import (.sg) and Swedish, English, German and French interfaces.</li>
+      </ul>
+      <p class="article-meta">Calculated times are estimates based on the supplied data. The program does not simulate a complete CNC program or check collisions. Features in the current source may differ from older packaged releases.</p>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="subedit">
+    <div class="container product">
+     <div>
+      <p class="eyebrow">02 / Active development</p>
+      <h2>SubEdit</h2>
+      <p class="lead">NC editing, visual toolpaths and program comparison.</p>
+     </div>
+     <div>
+      <p>SubEdit combines an NC editor with graphical XZ turning and XY toolpath views. It helps you follow the relationship between code and movement, compare program revisions and develop turning profiles.</p>
+      <h3>Features</h3>
+      <ul>
+       <li>NC editing with undo/redo, search, replace and navigation by line.</li>
+       <li>Two-file comparison with highlighted line and NC-field differences, plus navigation between changes.</li>
+       <li>Linked code and toolpath selection, zoom, pan and filters for rapid and machining movements.</li>
+       <li>Projected toolpath measurements for length, arc radius/diameter and angle.</li>
+       <li>Limited macro-expression evaluation with separate test values for preview.</li>
+       <li>XZ profile sketching with lines, arcs and corner radii, plus NC generation for supported external turning profiles.</li>
+       <li>.se projects containing NC text, sketch geometry, operations and used tools; file exchange with SubCalc.</li>
+       <li>Optional connection to SubManager-format tool, machine and equipment registers, with project-specific machine and accessory selections.</li>
+      </ul>
+      <p class="article-meta">Toolpath preview covers supported NC syntax. It does not provide collision checking or a fully compensated finished-part model. NC generation currently covers external turning profiles; controller and machine compatibility must be checked.</p>
+     </div>
+    </div>
+   </section>
+   <section class="section surface" id="submanager">
+    <div class="container product">
+     <div>
+      <p class="eyebrow">03 / Active development</p>
+      <h2>SubManager</h2>
+      <p class="lead">Tools, machines and equipment in organised registers.</p>
+     </div>
+     <div>
+      <p>SubManager is an optional resource manager for the Sub software family. Maintain tool articles, machine capabilities and machine-linked equipment in one place, with searchable records and controlled file exchange.</p>
+      <h3>Features</h3>
+      <ul>
+       <li>Searchable, sortable tool lists with combined supplier and machining-use filters.</li>
+       <li>Tool article data, insert geometry, prices, cutting data, material profiles and comments.</li>
+       <li>Machine fleet editing for spindles, turrets, process times, speed limits, chuck types and stock forms.</li>
+       <li>Equipment registers for spindle liners, collets, soft jaw sets and other accessories, linked to one or more machines.</li>
+       <li>JSON import/export for tool libraries and machine fleets, with stable IDs and explicit choices when tool data conflicts.</li>
+       <li>Validated file saving, backups and revision checks to help preserve existing register data.</li>
+       <li>Swedish, English, German and French interfaces.</li>
+      </ul>
+      <p class="article-meta">SubManager is optional: SubCalc and SubEdit can work independently. Register sharing and exchange are file based. Compatibility depends on each client version and supported register format.</p>
      </div>
     </div>
    </section>
@@ -116,7 +153,7 @@
     <div class="container product">
      <div>
       <p class="eyebrow">
-       02 / Existing project
+       04 / Existing project
       </p>
       <h2>
        SubGlyph
@@ -158,7 +195,7 @@
     <div class="container product">
      <div>
       <p class="eyebrow">
-       03 / Coming soon
+       05 / Coming soon
       </p>
       <h2>
        SubMakro
